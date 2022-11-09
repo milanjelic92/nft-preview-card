@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.card {
+    width: 250px;
+    height: 420px;
+    border-radius: 1px solid white;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+}
+
+
+.picture {
+    width: 85%;
+    margin-left: 18px;
+    margin-top: 18px;
+    border-radius: 5px;
+    height: auto;
+}
+.picture-container {
+    position: relative;
+    
+}
+.overlay {
+  position: absolute;
+  background-color: hsl(178, 100%, 50%);
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  width: 85%;
+  height: 91%;
+  margin-left: 18px;
+  margin-top: 18px;
+  border-radius: 5px;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+  border: none;
+ 
+}
+
+
+.picture-container:hover .overlay {
+  opacity: 0.5;
+}
+.picture-container:hover .eye-icon {
+  opacity: 1;
+}
+
+.eye-icon {
+  width: 33px;
+  position: absolute;
+  left: 108px;
+  top: 108px;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  cursor: pointer;
+  }
+
+h4 {
+    font-family: Outfit, sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    margin-left: 17px;
+    margin-top: 10px;
+    transition: color 0.15s ease;
+}
+h4:hover {
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.main-paragraph {
+    font-family: Outfit, sans-serif;
+    font-size: 13px;
+    margin-left: 17px;
+    margin-top: 15px;
+    color: hsl(215, 51%, 70%);
+    line-height: 1.5;
+    font-weight: 300;
+}
+.price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.left {
+    margin-left: 17px;
+    display: flex;
+    align-items: center;
+    
+}
+.right {
+    margin-right: 17px;
+    
+    display: flex;
+    align-items: center;
+}
+.icon-eth {
+    width: 0.5rem;
+}
+.icon-clock {
+    width: 0.7em;
+    margin-right: 5px;
+}
+
+.eth-price {
+    color: hsl(178, 100%, 50%);
+    font-family:Outfit, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    margin-left: 5px;
+    
+}
+.right-flex-item {
+    color: hsl(215, 51%, 70%);
+    font-family:Outfit, sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+
+}
+.horizontal-line {
+    border: 1px solid hsl(215, 32%, 27%);
+    width: 86%;
+    margin-left: 17px;
+    margin-top: 15px;
+    
+}
+.avatar-image {
+    width: 23px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+.creation-container {
+    display: flex;
+    align-items: center;
+    margin-left: 17px;
+    margin-top: 10px;
+}
+.author-name {
+    color: white;
+    font-family:Outfit, sans-serif;
+    font-size: 12px;
+    margin-left: 15px;
+    transition: color 0.15s ease;
+}
+.author-name:hover {
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+span {
+    color: hsl(215, 51%, 70%);
+    font-family:Outfit, sans-serif;
+    font-size: 12px;
+}
